@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="clearfix" id="header">
+        <h1>Portfolio</h1>
+        <nav >
+            <button class="btn btn-primary" id="open_nav" onclick="open_nav()"><i class="fa fa-bars" style="color: white;font-weight:bold;font-size:20px;"></i></button>
+            <button class="btn btn-danger" id="close_nav" onclick="close_nav()" style="display:none;"><i class="fa fa-close" style="color: white;font-weight:bold;font-size:20px;"></i></button>
+            <ul id="nav">
+                <li >
+                    <a href="#apropos">Accueil</a>
+                </li>
+                <li >
+                    <a href="#experience">Expériences</a>
+                </li>
+                <li >
+                    <a href="#competence">Compétences </a>
+                </li>
+                <li >
+                    <a href="#certificat">Certificats </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="apropos">
+            <div class="info">
+                <img src="img/logo.png">
+            </div>
+            <div class="info" style="display: block;">
+                <h4>Messaouri Deboun Ibrahim,</h4>
+                <p>je suis un étudiant M1 - management de la logistique à l'École Nationale de Commerce et de Gestion de Tanger <b> (ENCG)</b>, âgé de 21 ans. Je suis motivé, curieux, autodidacte, organisé et ponctuel. Actuellement, je suis à la recherche d'un <b>stage d'approfondissement dans le domaine de la logistique.</b></p>
+                <center>
+                    <a href="https://ma.linkedin.com/in/ibrahim-messaorui-deboun"><button class="btn btn-primary"><i class="fa fa-linkedin-square " style="margin-right:10px;"></i>Visite mon compte LinkedIn</button></a>
+                    <a href="https://drive.google.com/file/d/1RvXsJTW5PRgujmPuFdU0dxXHyASSCj5Q/view?usp=drive_link"><button class="btn btn-success"><i class="fa fa-download " style="margin-right:10px;"></i>Télécharger mon CV</button></a>
+                </center>
+            </div>
+            
+        </section>
+        <br><br>
+        <section id="experience">
+            <br><h2>Experiences : </h2><br>
+            <div class="content">
+                <div class="box">
+                    <p class="nom_entreprise">Stage en “Atlantic Packaging”</p>
+                    <p class="periode">juillet - août 2023</p>
+                    <ul class="tache">
+                        <li>Gestion de l'inventaire</li>
+                        <li>Participation à la planification des livraisons</li>
+                        <li>Création des demandes d'achat (logiciel SAP)</li>
+                        <li>Elaboration des bons de livraison et de réception (Logiciel SAP)</li>
+                        <li>Suivi du transport</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="nom_entreprise">Stage en “Decathlon Tanger”</p>
+                    <p class="periode">juin 2023</p>
+                    <ul class="tache">
+                        <li>Traitement de la réception et Implantation des produits</li>
+                        <li>Traitement des retours</li>
+                        <li>Encaissement avec logiciel "Erply Pos"</li>
+                        <li>Conseil et assistance client</li>
+                        <li>création des comptes clients</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="nom_entreprise">Stage d'initiation au sein de "BRICOMA Tanger"</p>
+                    <p class="periode">Décembre 2022 - Janvier 2023</p>
+                    <ul class="tache">
+                        <li>Réception et contrôle de marchandises</li>
+                        <li>Établissement des bons de livraison, bons de commande, factures, bons de garantie</li>
+                        <li>Création des cartes de fidélité</li>
+                        <li>Gestion de la paie</li>
+                    </ul>
+                </div>
+            </div> 
+            <br>
+        </section>
+        <section id="competence"> 
+            <br><h2>Compétences : </h2><br>
+            <div class="content">
+                <div class="detail">
+                    <h3>Langues : </h3>
+                    <label for="arabic">Arabe : </label>
+                    <input type="range" value="90" id="arabic" class="form-control">
+                    <br>
+                    <label for="french">Français : </label>
+                    <input type="range" value="70" id="french" class="form-control">
+                    <br>
+                    <label for="english">Anglais : </label>
+                    <input type="range" value="60" id="english" class="form-control">
+                </div>
+                <div class="detail">
+                    <h3>Compétences : </h3>
+                    <p>Gestion du temps</p>
+                    <p>Travail en équipe</p>
+                    <p>Outils bureautiques : WORD, EXCEL, POWERPOINT, ACCESS</p>
+                    <p>Auto-formation de programmation :</p>
+                    <label for="HTML">HTML : </label>
+                    <input type="range" value="90" maxlength="90" minlength="90" id="HTML" class="form-control">
+                    <br>
+                    <label for="CSS">CSS : </label>
+                    <input type="range" value="70" id="CSS" class="form-control">
+                    <br>
+                    <label for="SQL">SQL : </label>
+                    <input type="range" value="60" id="SQL" class="form-control">
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="certificat">
+            <br><h2>Certificats : </h2><br>
+            <div class="content">
+                <img class="box" src="img/logistics.PNG">
+                <img class="box" src="img/sql.png">
+                <img class="box" src="img/html.png">
+                <img class="box" src="img/css.png">
+            </div>
+            <br>
+        </section>
+        </main>
+        <!--<section id="contact">
+            <br><h2>Contact</h2><br>
+            <div class="container">
+                <div class="contact-item">
+                    <h4>LinkedIn:</h4>
+                    <a href="https://ma.linkedin.com/in/ibrahim-messaouri-deboun" target="_blank">Visite mon compte LinkedIn</a>
+                </div>
+        
+                <div class="contact-item">
+                    <h4>Email:</h4>
+                    <a href="Messaourideboun.ibrahim@gmail.com">Messaourideboun.ibrahim@gmail.com</a>
+                </div>
+        
+                <div class="contact-item">
+                    <h4>Téléphone: </h4>
+                    <p>+212 6 35 40 85 51</p>
+                </div>
+            </div>
+            
+           </section>
+    </main>-->
+    <footer>
+        <H5>Ibrahim Messaouri Deboun © 2023</H5>
+    </footer>
+</body>
+</html>

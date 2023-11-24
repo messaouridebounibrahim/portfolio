@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: rgb(11, 9, 9);
+}
+header{
+    background-color: 	#423f3b;
+    padding: 10px;
+}
+header h1 {
+    color: white;
+    float: left;
+    margin-left: 20px;
+    
+} 
+header nav button{
+    float:right;
+    margin-top:-50px;
+    color:white;
+}
+header nav  button i{
+    color:white;
+}
+header nav ul li a{
+    color:white;
+    text-decoration:none;
+    
+}
+header nav ul li a:hover{
+    text-decoration:none;
+    color:#ff6666;
+    margin-left:10px;
+}
+
+main #apropos .info{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    padding:10px;
+}
+
+main #apropos .info img{
+    border-radius:50%;
+    width:300px;
+    height:auto;
+    margin:50px;
+    transform:rotate(-5deg);
+}
+main #apropos .info h4{
+    color:white;
+    font-weight:bold;
+    margin-left:10px;
+    font-family:fangsong;
+    
+}
+main #apropos .info p{
+    color:white;
+    font-style:italic;
+    margin:10px;
+    TEXT-align:justify;
+}main #apropos .info button {
+    font-size:19px;
+        margin:5px;
+        width:90%;
+    
+}
+main #experience , main #certificat{
+    background-color:#cbbeb5;
+    
+}
+main #experience h2, main #certificat h2{
+    color:black;
+    margin:10px;
+    font-family:monospace;
+    font-weight:bold;
+    text-shadow:1px 1px white;
+}
+main #experience .content , main #certificat .content{
+    display:flex;
+    overflow:auto;
+    flex-direction:row;
+}
+main #experience .box, main #certificat .box{
+    background-color:#7e7ea7;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0px 0px 5px black;
+    min-width:300px;
+}
+
+main #experience .box .nom_entreprise{
+    font-weight:bold;
+    font-size:18px;
+}
+main #experience .box .periode{
+    font-size:18px;
+    font-style:italic;
+    margin-top:-15px;
+}
+main #experience .box .tache{
+    margin-left:30px;
+}
+
+
+main #competence {
+    background-color:#000000;
+    
+}
+main #competence h2{
+    color:white;
+    margin:10px;
+    font-family:monospace;
+    font-weight:bold;
+    
+}
+main #competence .content .detail{
+    width:90%;
+    padding:20px;
+    background-color:#c2b9b2;
+    margin:20px;
+    border-radius:10px;
+    box-shadow:inset 0px 0px 5px black;
+}
+main #competence .content .detail h3{
+    text-shadow:1px 1px white;
+    font-family:fantasy;
+}
+main #competence .content .detail p{
+    font-size:17,5px;
+    Font-weight:bold;
+}
+main #competence .content .detail label{
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+    font-style:italic;
+    text-decoration:underline dashed;
+    margin-left:20px;
+}
+footer h5 {
+    color:white;
+    text-align:center;
+    font-family:arial;
+    margin:10px;
+}
+
+@media screen and (min-width: 750px) {
+    main #apropos{
+        display:flex;
+        flex-direction:row;
+    }
+    header nav {
+        float: right;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav .btn{
+        display:none;
+    }
+    header nav ul li{
+        list-style:none;
+        margin-top:10px;
+        margin-left:25px;
+        margin-right:20px;
+        font-size:20px;
+    }
+
+    main #apropos .info h4{
+        margin-top:80px;
+    }
+    main #competence .content{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    main #competence .content.détail{
+        flex:1;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    header nav {
+        float:right;
+        width:100%;
+    }
+    
+    header nav ul{
+        display: none;
+        width:100%;
+        float:left;
+        flex-direction:column;
+        justify-content:center;
+    }
+    header nav ul li{
+        list-style:none;
+        margin-top:10px;
+        margin-left:25px;
+        margin-right:20px;
+        font-size:20px;
+        border-bottom:1px solid white;
+    }
+
+    main #apropos{
+        display:flex;
+        flex-direction:column;
+    }
+    main #competence  .content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}
